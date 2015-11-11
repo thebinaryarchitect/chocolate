@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		13840EC51BF3FC5700DE6CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840EC41BF3FC5700DE6CCC /* main.m */; };
-		13840EC81BF3FC5700DE6CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840EC71BF3FC5700DE6CCC /* AppDelegate.m */; };
-		13840ECB1BF3FC5700DE6CCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840ECA1BF3FC5700DE6CCC /* ViewController.m */; };
 		13840ECE1BF3FC5800DE6CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13840ECC1BF3FC5800DE6CCC /* Main.storyboard */; };
 		13840ED01BF3FC5800DE6CCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13840ECF1BF3FC5800DE6CCC /* Images.xcassets */; };
 		13840ED31BF3FC5800DE6CCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13840ED11BF3FC5800DE6CCC /* LaunchScreen.xib */; };
 		13840EDF1BF3FC5800DE6CCC /* ChocolateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840EDE1BF3FC5800DE6CCC /* ChocolateTests.m */; };
+		13840EF11BF3FC9F00DE6CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840EEA1BF3FC9F00DE6CCC /* AppDelegate.m */; };
+		13840EF21BF3FC9F00DE6CCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840EEC1BF3FC9F00DE6CCC /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +30,16 @@
 		13840EBF1BF3FC5700DE6CCC /* Chocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13840EC31BF3FC5700DE6CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13840EC41BF3FC5700DE6CCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		13840EC61BF3FC5700DE6CCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		13840EC71BF3FC5700DE6CCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		13840EC91BF3FC5700DE6CCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		13840ECA1BF3FC5700DE6CCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		13840ECD1BF3FC5800DE6CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13840ECF1BF3FC5800DE6CCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13840ED21BF3FC5800DE6CCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13840ED81BF3FC5800DE6CCC /* ChocolateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChocolateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13840EDD1BF3FC5800DE6CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13840EDE1BF3FC5800DE6CCC /* ChocolateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChocolateTests.m; sourceTree = "<group>"; };
+		13840EE91BF3FC9F00DE6CCC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		13840EEA1BF3FC9F00DE6CCC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13840EEB1BF3FC9F00DE6CCC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		13840EEC1BF3FC9F00DE6CCC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +63,7 @@
 		13840EB61BF3FC5700DE6CCC = {
 			isa = PBXGroup;
 			children = (
+				13840EF31BF3FCB100DE6CCC /* TBAVersionTracker */,
 				13840EC11BF3FC5700DE6CCC /* Chocolate */,
 				13840EDB1BF3FC5800DE6CCC /* ChocolateTests */,
 				13840EC01BF3FC5700DE6CCC /* Products */,
@@ -81,10 +82,8 @@
 		13840EC11BF3FC5700DE6CCC /* Chocolate */ = {
 			isa = PBXGroup;
 			children = (
-				13840EC61BF3FC5700DE6CCC /* AppDelegate.h */,
-				13840EC71BF3FC5700DE6CCC /* AppDelegate.m */,
-				13840EC91BF3FC5700DE6CCC /* ViewController.h */,
-				13840ECA1BF3FC5700DE6CCC /* ViewController.m */,
+				13840EE81BF3FC9F00DE6CCC /* Classes */,
+				13840EED1BF3FC9F00DE6CCC /* Resources */,
 				13840ECC1BF3FC5800DE6CCC /* Main.storyboard */,
 				13840ECF1BF3FC5800DE6CCC /* Images.xcassets */,
 				13840ED11BF3FC5800DE6CCC /* LaunchScreen.xib */,
@@ -117,6 +116,55 @@
 				13840EDD1BF3FC5800DE6CCC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13840EE81BF3FC9F00DE6CCC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				13840EE91BF3FC9F00DE6CCC /* AppDelegate.h */,
+				13840EEA1BF3FC9F00DE6CCC /* AppDelegate.m */,
+				13840EEB1BF3FC9F00DE6CCC /* ViewController.h */,
+				13840EEC1BF3FC9F00DE6CCC /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		13840EED1BF3FC9F00DE6CCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13840EEE1BF3FC9F00DE6CCC /* Audio */,
+				13840EEF1BF3FC9F00DE6CCC /* Data */,
+				13840EF01BF3FC9F00DE6CCC /* Graphics */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		13840EEE1BF3FC9F00DE6CCC /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		13840EEF1BF3FC9F00DE6CCC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		13840EF01BF3FC9F00DE6CCC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		13840EF31BF3FCB100DE6CCC /* TBAVersionTracker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TBAVersionTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +216,7 @@
 				TargetAttributes = {
 					13840EBE1BF3FC5700DE6CCC = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 98857CSCYP;
 					};
 					13840ED71BF3FC5800DE6CCC = {
 						CreatedOnToolsVersion = 6.4;
@@ -219,8 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13840ECB1BF3FC5700DE6CCC /* ViewController.m in Sources */,
-				13840EC81BF3FC5700DE6CCC /* AppDelegate.m in Sources */,
+				13840EF21BF3FC9F00DE6CCC /* ViewController.m in Sources */,
+				13840EF11BF3FC9F00DE6CCC /* AppDelegate.m in Sources */,
 				13840EC51BF3FC5700DE6CCC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chocolate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Chocolate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
