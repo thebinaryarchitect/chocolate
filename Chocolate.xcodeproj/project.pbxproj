@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133AF5251BF3FDD80021FBAC /* TBAVersionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 133AF5241BF3FDD80021FBAC /* TBAVersionTracker.m */; };
 		13840EC51BF3FC5700DE6CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13840EC41BF3FC5700DE6CCC /* main.m */; };
 		13840ECE1BF3FC5800DE6CCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13840ECC1BF3FC5800DE6CCC /* Main.storyboard */; };
 		13840ED01BF3FC5800DE6CCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13840ECF1BF3FC5800DE6CCC /* Images.xcassets */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133AF5231BF3FDD80021FBAC /* TBAVersionTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAVersionTracker.h; sourceTree = "<group>"; };
+		133AF5241BF3FDD80021FBAC /* TBAVersionTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAVersionTracker.m; sourceTree = "<group>"; };
 		13840EBF1BF3FC5700DE6CCC /* Chocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13840EC31BF3FC5700DE6CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13840EC41BF3FC5700DE6CCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 		13840EF31BF3FCB100DE6CCC /* TBAVersionTracker */ = {
 			isa = PBXGroup;
 			children = (
+				133AF5231BF3FDD80021FBAC /* TBAVersionTracker.h */,
+				133AF5241BF3FDD80021FBAC /* TBAVersionTracker.m */,
 			);
 			path = TBAVersionTracker;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				13840EF21BF3FC9F00DE6CCC /* ViewController.m in Sources */,
 				13840EF11BF3FC9F00DE6CCC /* AppDelegate.m in Sources */,
 				13840EC51BF3FC5700DE6CCC /* main.m in Sources */,
+				133AF5251BF3FDD80021FBAC /* TBAVersionTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +475,7 @@
 				13840EE41BF3FC5800DE6CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13840EE51BF3FC5800DE6CCC /* Build configuration list for PBXNativeTarget "ChocolateTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +484,7 @@
 				13840EE71BF3FC5800DE6CCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
