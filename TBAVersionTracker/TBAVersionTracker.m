@@ -8,6 +8,28 @@
 
 #import "TBAVersionTracker.h"
 
+#pragma mark - NSUserDefaults (TBAVersionTracker)
+
+NSString *const NSUserDefaultsKeyVersionDictionary = @"com.thebinaryarchitect.versiontracker";
+
+@interface NSUserDefaults (VersionTracker)
+- (NSDictionary *)versionDictionary;
+- (void)setVersionDictionary:(NSDictionary *)dictionary;
+@end
+
+@implementation NSUserDefaults (VersionTracker)
+
+- (NSDictionary *)versionDictionary {
+    return [self objectForKey:NSUserDefaultsKeyVersionDictionary];
+}
+
+- (void)setVersionDictionary:(NSDictionary *)dictionary {
+    [self setObject:dictionary forKey:NSUserDefaultsKeyVersionDictionary];
+    [self synchronize];
+}
+
+@end
+
 #pragma mark - TBAVersionTracker
 
 @interface TBAVersionTracker()
